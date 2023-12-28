@@ -9,5 +9,5 @@ describe('Button', () => {
     )
     const text = Wrapper.queryByText('Add feature')
     expect(text).toBeInTheDocument()
-  });
-});
+  })
+})
