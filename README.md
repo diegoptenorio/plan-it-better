@@ -14,6 +14,7 @@ Plan It Better is a web project that helps estimate team tasks through different
 # Stack
 
 - React/Next.js
+- Typescript
 - Tailwind
 - RTL/Jest
 - Mamba UI
