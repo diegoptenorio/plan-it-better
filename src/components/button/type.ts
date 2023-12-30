@@ -1,3 +1,3 @@
 export type TButton = {
-  value: string;
+    value?: string;
 };

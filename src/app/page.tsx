@@ -1,4 +1,4 @@
-import { Name } from "@features";
+import { Name } from '@features';
 
 const Home = () => <Name />;
 

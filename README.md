@@ -13,21 +13,21 @@ Plan It Better is a web project that helps estimate team tasks through different
 
 # Stack
 
-- React/Next.js
-- Typescript
-- Tailwind
-- RTL/Jest
-- Mamba UI
+-   React/Next.js
+-   Typescript
+-   Tailwind
+-   RTL/Jest
+-   Mamba UI
 
 # Status
 
-- [x] Business Requirements
-- [x] Layout
-- [x] Prototype
-- [ ] Frontend - In Progress
-- [ ] Backend
+-   [x] Business Requirements
+-   [x] Layout
+-   [x] Prototype
+-   [ ] Frontend - In Progress
+-   [ ] Backend
 
 # Access
 
-- <a href="https://miro.com/welcomeonboard/bmtENGRlWW4xMlNaS09vajBIZDdMSDhMZ1NiNHd5NGk3anNEODJyN0xaa3ViQ1FBZ2NLc3BYZUltcTZnRWdlUnwzMDc0NDU3MzQ4NzU0NTcwNDA5fDI=?share_link_id=814939474010" target="_blank">Task board</a>
-- <a href="https://www.figma.com/file/4TbE0a41Oeq8c82VxGr2pU/Plan-It-Better?type=design&node-id=0%3A1&mode=design&t=IQn56G1rmDbwv6Bn-1" target="_blank">Layout</a>
+-   <a href="https://miro.com/welcomeonboard/bmtENGRlWW4xMlNaS09vajBIZDdMSDhMZ1NiNHd5NGk3anNEODJyN0xaa3ViQ1FBZ2NLc3BYZUltcTZnRWdlUnwzMDc0NDU3MzQ4NzU0NTcwNDA5fDI=?share_link_id=814939474010" target="_blank">Task board</a>
+-   <a href="https://www.figma.com/file/4TbE0a41Oeq8c82VxGr2pU/Plan-It-Better?type=design&node-id=0%3A1&mode=design&t=IQn56G1rmDbwv6Bn-1" target="_blank">Layout</a>
