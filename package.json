@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@types/jest": "^29.5.11",
+    "husky": "^8.0.3",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
@@ -51,7 +52,7 @@
       "eslint"
     ],
     "*.{html,css,json}": [
-      "prettier --write",
+      "prettier",
       "eslint"
     ]
   }
