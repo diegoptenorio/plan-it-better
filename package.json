@@ -43,15 +43,17 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "test && lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "*.{ts,tsx}": [
+      "teste",
       "prettier",
       "eslint"
     ],
     "*.{html,css,json}": [
+      "teste",
       "prettier",
       "eslint"
     ]
