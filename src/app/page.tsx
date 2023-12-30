@@ -1,7 +1,5 @@
-import { Name } from '@features'
+import { Name } from "@features";
 
-const Home = () => (
-  <Name />
-)
+const Home = () => <Name />;
 
-export default Home
+export default Home;

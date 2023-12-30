@@ -1,1 +1,1 @@
-export const Share = () => <></>
+export const Share = () => <></>;

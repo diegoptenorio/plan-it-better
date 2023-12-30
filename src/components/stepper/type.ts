@@ -1,3 +1,3 @@
 export type TStepper = {
-    label: string,
-}
+  label: string;
+};

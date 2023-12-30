@@ -1,1 +1,1 @@
-export const Technique = () => <></>
+export const Technique = () => <></>;

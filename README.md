@@ -12,9 +12,9 @@ Plan It Better is a web project that helps estimate team tasks through different
 
 # Status
 
-- [X] Business Requirements
-- [X] Layout
-- [X] Prototype
+- [x] Business Requirements
+- [x] Layout
+- [x] Prototype
 - [ ] Frontend - In Progress
 - [ ] Backend
 
