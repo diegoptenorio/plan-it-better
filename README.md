@@ -2,6 +2,7 @@
 
 <p align="center">
  <a href="#about">About</a> •
+ <a href="#stack">Stack</a> • 
  <a href="#status">Status</a> • 
  <a href="#access">Access</a>
 </p>
@@ -9,6 +10,13 @@
 # About
 
 Plan It Better is a web project that helps estimate team tasks through different planning techniques.
+
+# Stack
+
+- React/Next.js
+- Tailwind
+- RTL/Jest
+- Mamba UI
 
 # Status
 
