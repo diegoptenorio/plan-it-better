@@ -1,11 +1,13 @@
 import { Button, Input, Logo, Stepper } from '@components';
 
 export const Name = () => (
-    <div className="w-full max-w-prose">
+    <div className="container w-[500px] flex flex-col items-center mt-[10vh]">
         <Logo />
         <Stepper label="Step 1: Feature" />
         <Input />
-        <Button value="Add feature" />
-        <Button value="Next" />
+        <div className="flex flex-col items-end w-full">
+            <Button value="Add feature" size="sm" style="lined" />
+            <Button value="Next" />
+        </div>
     </div>
 );

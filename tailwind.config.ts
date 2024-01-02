@@ -5,6 +5,7 @@ const config: Config = {
     content: [
         './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
         './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/features/**/*.{js,ts,jsx,tsx,mdx}',
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
@@ -36,7 +37,10 @@ const config: Config = {
             neutral: colors.slate,
             stone: colors.stone,
         },
-        variants: {},
+        container: {
+            center: true,
+            padding: '2rem',
+        },
         plugins: [],
     },
     plugins: [],
