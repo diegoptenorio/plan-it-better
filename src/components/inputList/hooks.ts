@@ -5,7 +5,7 @@ export const useInputList = () => {
     const [inputList, setInputList] = useState([
         {
             id: 0,
-            label: 'What is the name of the feature?',
+            label: 'What is the name of the task?',
             placeholder: 'Ex: Task 1',
             remove: false,
             value: '',
