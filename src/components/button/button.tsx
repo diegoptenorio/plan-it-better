@@ -1,4 +1,4 @@
-import { TButton, TSize, TStyle } from './type';
+import { TButton, TSize, TStyle } from './types';
 
 const buttonSize = (size: TSize) => {
     const sizeOptions = {
@@ -8,23 +8,26 @@ const buttonSize = (size: TSize) => {
     return size ? sizeOptions[size] : sizeOptions.md;
 };
 
-const buttonStyle = (style: TStyle) => {
+const buttonStyle = ({ disabled, style }: TStyle) => {
     const styleOptions = {
         default: 'font-semibold bg-blue-500 text-white',
-        lined: 'text-sky-500 border border-sky-500',
+        lined: disabled
+            ? 'text-gray-400 border border-gray-400'
+            : 'text-sky-500 border border-sky-500',
     };
     return style ? styleOptions[style] : styleOptions.default;
 };
 
-export const Button = ({ value, size, style }: TButton) => (
+export const Button = ({ disabled, onClick, size, style, value }: TButton) => (
     <button
-        type="button"
         className={`
             rounded
-            mb-10
             ${buttonSize(size)}
-            ${buttonStyle(style)}
+            ${buttonStyle({ disabled, style })}
         `}
+        disabled={disabled}
+        onClick={onClick}
+        type="button"
     >
         {value}
     </button>
