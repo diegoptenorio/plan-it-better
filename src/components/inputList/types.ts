@@ -2,6 +2,6 @@ export type IInputList = {
     id: number;
     label: string;
     placeholder: string;
-    remove: boolean;
+    action?: any;
     value: string;
 };

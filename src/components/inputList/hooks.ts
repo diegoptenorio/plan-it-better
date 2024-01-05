@@ -13,7 +13,6 @@ export const useInputList = () => {
             id: 0,
             label: BUSINESS.DEFAULT_LABEL,
             placeholder: `${BUSINESS.PLACEHOLDER_BASE} 1`,
-            remove: false,
             value: '',
         },
     ]);
@@ -32,7 +31,7 @@ export const useInputList = () => {
                               placeholder: `${BUSINESS.PLACEHOLDER_BASE} ${
                                   lastTeste.id + 2
                               }`,
-                              remove: true,
+                              action: () => alert('oi'),
                               value: '',
                           },
                       ]
@@ -43,7 +42,7 @@ export const useInputList = () => {
                               placeholder: `${BUSINESS.PLACEHOLDER_BASE} ${
                                   lastTeste.id + 2
                               }`,
-                              remove: true,
+                              action: () => alert('oi'),
                               value: '',
                           },
                       ];

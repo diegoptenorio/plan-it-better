@@ -1,3 +1,4 @@
+import IconRemove from './icon_remove.svg';
 import Logo from './logo.svg';
 
-export { Logo };
+export { IconRemove, Logo };
