@@ -20,16 +20,16 @@ export const useInputList = () => {
 
     const addTaskInput = () => {
         if (inputList.length <= BUSINESS.MAX_INPUT_QUANTITY) {
-            const lastTeste = inputList[inputList.length - 1];
+            const lastInput = inputList[inputList.length - 1];
             setInputList((previous: IInputList[]) => {
                 return previous
                     ? [
                           ...previous,
                           {
-                              id: lastTeste.id + 1,
+                              id: lastInput.id + 1,
                               label: '',
                               placeholder: `${BUSINESS.PLACEHOLDER_BASE} ${
-                                  lastTeste.id + 2
+                                  lastInput.id + 2
                               }`,
                               action: () => alert('oi'),
                               value: '',
@@ -37,10 +37,10 @@ export const useInputList = () => {
                       ]
                     : [
                           {
-                              id: lastTeste.id + 1,
+                              id: lastInput.id + 1,
                               label: '',
                               placeholder: `${BUSINESS.PLACEHOLDER_BASE} ${
-                                  lastTeste.id + 2
+                                  lastInput.id + 2
                               }`,
                               action: () => alert('oi'),
                               value: '',
