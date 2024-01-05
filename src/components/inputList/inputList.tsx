@@ -11,7 +11,9 @@ export const InputList = () => {
                 const { action, id, label, placeholder, value } = element;
                 return (
                     <Fieldset key={id}>
-                        {label && <Label label={label} />}
+                        {label && (
+                            <Label label={label} htmlFor={`name-${id}`} />
+                        )}
                         <Input id={id} placeholder={placeholder} value={value}>
                             {action && <Input.Button onClick={action} />}
                         </Input>

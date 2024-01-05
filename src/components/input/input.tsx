@@ -10,8 +10,9 @@ export const Input: FC<TInput> & TInputComposition = ({
     <div className="relative flex">
         {children}
         <input
+            autoComplete="off"
             type="value"
-            name="name"
+            name={`name-${id}`}
             id={`name-${id}`}
             className="
                     flex
