@@ -18,7 +18,7 @@ export const useInputList = () => {
     ]);
     const [disabledAddButton, setDisabledAddButton] = useState(false);
 
-    const handleTeste = () => {
+    const addTaskInput = () => {
         if (inputList.length <= BUSINESS.MAX_INPUT_QUANTITY) {
             const lastTeste = inputList[inputList.length - 1];
             setInputList((previous: IInputList[]) => {
@@ -55,7 +55,7 @@ export const useInputList = () => {
 
     return {
         disabledAddButton,
-        handleTeste,
+        addTaskInput,
         inputList,
     };
 };

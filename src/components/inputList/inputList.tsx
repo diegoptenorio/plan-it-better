@@ -4,7 +4,7 @@ import { IInputList } from './types';
 import Input from '../input';
 
 export const InputList = () => {
-    const { disabledAddButton, handleTeste, inputList } = useInputList();
+    const { disabledAddButton, addTaskInput, inputList } = useInputList();
     return (
         <>
             {inputList.map((element: IInputList) => {
@@ -22,7 +22,7 @@ export const InputList = () => {
                 <Button
                     disabled={disabledAddButton}
                     value="Add feature"
-                    onClick={() => handleTeste()}
+                    onClick={() => addTaskInput()}
                     size="sm"
                     style="lined"
                 />
