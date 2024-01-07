@@ -1,3 +1,3 @@
-export * from './taskName/taskName';
-export * from './share/share';
-export * from './technique/technique';
+export * from './taskName';
+export * from './share';
+export * from './technique';

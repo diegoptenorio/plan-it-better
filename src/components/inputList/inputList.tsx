@@ -1,7 +1,6 @@
-import { Button, Fieldset, Label } from '@components';
+import { Button, Fieldset, Input, Label } from '@components';
 import { useInputList } from './hooks';
 import { IInputList } from './types';
-import Input from '../input';
 
 export const InputList = () => {
     const { disabledAddButton, addTaskInput, inputList } = useInputList();
