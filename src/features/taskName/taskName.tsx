@@ -1,3 +1,5 @@
+'use cliente';
+
 import { Button, InputList, Logo, Stepper } from '@components';
 
 export const TaskName = () => (

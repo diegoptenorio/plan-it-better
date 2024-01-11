@@ -1,5 +1,3 @@
-'use client';
-
 import { TaskName } from '@features';
 
 const Home = () => <TaskName />;

@@ -3,5 +3,4 @@ export type IInputList = {
     label: string;
     placeholder: string;
     action?: any;
-    value: string;
 };

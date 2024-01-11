@@ -1,3 +1,5 @@
+'use client';
+
 import { Button, Fieldset, Input, Label } from '@components';
 import { useInputList } from './hooks';
 import { IInputList } from './types';
@@ -7,13 +9,13 @@ export const InputList = () => {
     return (
         <>
             {inputList.map((element: IInputList) => {
-                const { action, id, label, placeholder, value } = element;
+                const { action, id, label, placeholder } = element;
                 return (
                     <Fieldset key={id}>
                         {label && (
                             <Label label={label} htmlFor={`name-${id}`} />
                         )}
-                        <Input id={id} placeholder={placeholder} value={value}>
+                        <Input id={id} placeholder={placeholder}>
                             {action && <Input.Button onClick={action} />}
                         </Input>
                     </Fieldset>
