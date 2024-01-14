@@ -1,6 +1,9 @@
 import { IconRemove } from '@img';
 import Img from 'next/image';
-import { TInputButton } from './types';
+
+type TInputButton = {
+    onClick?: any;
+};
 
 export const InputButton = ({ onClick }: TInputButton) => (
     <span className="absolute inset-y-2 z-10 right-2">

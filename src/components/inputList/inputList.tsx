@@ -2,20 +2,32 @@
 
 import { Button, Fieldset, Input, Label } from '@components';
 import { useInputList } from './hooks';
-import { IInputList } from './types';
+
+type InputList = {
+    action?: any;
+    id: number;
+    label?: string;
+    placeholder?: string;
+    value: string;
+};
 
 export const InputList = () => {
-    const { disabledAddButton, addTaskInput, inputList } = useInputList();
+    const { addTaskInput, disabledAddButton, update, tasks } = useInputList();
     return (
         <>
-            {inputList.map((element: IInputList) => {
+            {tasks.map((element: InputList) => {
                 const { action, id, label, placeholder } = element;
                 return (
                     <Fieldset key={id}>
                         {label && (
                             <Label label={label} htmlFor={`name-${id}`} />
                         )}
-                        <Input id={id} placeholder={placeholder}>
+                        <Input
+                            id={id}
+                            placeholder={placeholder}
+                            update={update}
+                            tasks={tasks}
+                        >
                             {action && <Input.Button onClick={action} />}
                         </Input>
                     </Fieldset>

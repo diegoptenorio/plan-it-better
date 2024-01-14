@@ -1,6 +1,8 @@
-import { TStepper } from './types';
+type Stepper = {
+    label: string;
+};
 
-export const Stepper = ({ label }: TStepper) => (
+export const Stepper = ({ label }: Stepper) => (
     <div className="space-y-2 text-gray-600 w-full mb-10">
         <h3 className="text-base font-semibold text-sm">{label}</h3>
         <div className="flex space-x-3">

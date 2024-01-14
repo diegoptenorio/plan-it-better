@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "baseUrl": "./src",
         "target": "es5",
         "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,
@@ -19,11 +20,10 @@
             }
         ],
         "paths": {
-            "@img": ["./src/assets/img"],
-            "@components": ["./src/components"],
-            "@features": ["./src/features"],
-            "@hooks": ["./src/hooks"],
-            "@style": ["./src/style/globals.css"]
+            "@components": ["./components"],
+            "@features": ["./features"],
+            "@img": ["./assets/img"],
+            "@style": ["./style/globals.css"]
         }
     },
     "include": [

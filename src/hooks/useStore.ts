@@ -1,13 +1,29 @@
 import { create } from 'zustand';
+import CONSTANTS from '../constants/constants';
 
-interface TaskState {
-    taskName: string;
-    update: (taskName: string) => void;
-}
+type InputList = {
+    action?: any;
+    id: number;
+    label?: string;
+    placeholder?: string;
+    value: string;
+};
+
+type TaskState = {
+    tasks: InputList[];
+    update: (taskName: InputList[]) => void;
+};
 
 const useStore = create<TaskState>()((set) => ({
-    taskName: '',
-    update: (taskName) => set({ taskName }),
+    tasks: [
+        {
+            id: 0,
+            label: CONSTANTS.DEFAULT_LABEL,
+            placeholder: `${CONSTANTS.PLACEHOLDER_BASE} 1`,
+            value: '',
+        },
+    ],
+    update: (tasks) => set({ tasks }),
 }));
 
 export default useStore;

@@ -1,15 +1,40 @@
 'use client';
 
-import { FC } from 'react';
-import useStore from '../../hooks/useStore';
-import { TInput, TInputComposition } from './types';
+import { FC, ReactNode } from 'react';
 
-export const Input: FC<TInput> & TInputComposition = ({
+type Tasks = {
+    action?: any;
+    id: number;
+    label?: string;
+    placeholder?: string;
+    value: string;
+};
+
+type Input = {
+    children?: ReactNode;
+    id: number;
+    update: any;
+    placeholder?: string;
+    tasks: Tasks[];
+};
+
+type InputComposition = {
+    Button?: any;
+    Label?: any;
+};
+
+export const Input: FC<Input> & InputComposition = ({
     children,
     id,
+    update,
     placeholder,
+    tasks,
 }) => {
-    const { taskName, update } = useStore();
+    const updateTaskName = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newTasks = tasks;
+        newTasks[id].value = e.target.value;
+        update(newTasks);
+    };
     return (
         <div className="relative flex">
             {children}
@@ -27,9 +52,9 @@ export const Input: FC<TInput> & TInputComposition = ({
                         border-gray-300
                         value-gray-500
                         focus:ri p-3"
-                onChange={(e) => update(e.target.value)}
+                onChange={(e) => updateTaskName(e)}
                 placeholder={placeholder}
-                value={taskName}
+                value={tasks[id]?.value}
             />
         </div>
     );

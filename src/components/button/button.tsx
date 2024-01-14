@@ -1,6 +1,19 @@
-import { TButton, TSize, TStyle } from './types';
+type Size = 'sm' | 'md' | undefined;
 
-const buttonSize = (size: TSize) => {
+type Style = {
+    disabled?: boolean;
+    style?: 'default' | 'lined';
+};
+
+type Button = {
+    disabled?: boolean;
+    onClick?: () => void;
+    value?: string;
+    size?: Size;
+    style?: 'default' | 'lined' | undefined;
+};
+
+const buttonSize = (size: Size) => {
     const sizeOptions = {
         sm: 'px-4 py-2 text-xs',
         md: 'px-8 py-3',
@@ -8,7 +21,7 @@ const buttonSize = (size: TSize) => {
     return size ? sizeOptions[size] : sizeOptions.md;
 };
 
-const buttonStyle = ({ disabled, style }: TStyle) => {
+const buttonStyle = ({ disabled, style }: Style) => {
     const styleOptions = {
         default: 'font-semibold bg-blue-500 text-white',
         lined: disabled
@@ -18,7 +31,7 @@ const buttonStyle = ({ disabled, style }: TStyle) => {
     return style ? styleOptions[style] : styleOptions.default;
 };
 
-export const Button = ({ disabled, onClick, size, style, value }: TButton) => (
+export const Button = ({ disabled, onClick, size, style, value }: Button) => (
     <button
         className={`
             rounded
